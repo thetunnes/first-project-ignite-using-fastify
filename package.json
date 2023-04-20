@@ -2,6 +2,9 @@
   "name": "project-fastify",
   "version": "1.0.0",
   "main": "index.js",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "build": "tsup src --out-dir build",
@@ -18,12 +21,13 @@
     "dotenv": "^16.0.3",
     "fastify": "^4.15.0",
     "knex": "^2.4.2",
-    "sqlite3": "^5.1.6",
+    "pg": "^8.10.0",
     "tsc": "^2.0.4",
     "typescript": "^5.0.3",
     "zod": "^3.21.4"
   },
   "devDependencies": {
+    "sqlite3": "^5.1.6",
     "@rocketseat/eslint-config": "^1.2.0",
     "@types/node": "^18.15.11",
     "@types/supertest": "^2.0.12",
